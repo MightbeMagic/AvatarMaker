@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 	public int Ranking { get { return m_ranking; }
 		set
 		{
-			m_ranking = Mathf.Min(value, 1);
+			m_ranking = Mathf.Max(value, 1);
 			INV_Ranking.text = m_ranking.ToString();
 		}
 	}

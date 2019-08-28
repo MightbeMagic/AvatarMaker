@@ -82,42 +82,42 @@ public class Game : MonoBehaviour
 		if (score > 45)
 		{
 			s_Score.SetText("SS" + " (" + score.ToString() + ")");
-			m_player.Ranking += 75;
+			m_player.Ranking -= 75;
 		}
 		else if (score > 36)
 		{
 			s_Score.SetText("S" + " (" + score.ToString() + ")");
-			m_player.Ranking += 45;
+			m_player.Ranking -= 45;
 
 		}
 		else if (score > 27)
 		{
 			s_Score.SetText("A" + " (" + score.ToString() + ")");
-			m_player.Ranking += 30;
+			m_player.Ranking -= 30;
 
 		}
 		else if (score > 18)
 		{
 			s_Score.SetText("B" + " (" + score.ToString() + ")");
-			m_player.Ranking += 20;
+			m_player.Ranking -= 20;
 
 		}
 		else if (score > 9)
 		{
 			s_Score.SetText("C" + " (" + score.ToString() + ")");
-			m_player.Ranking += 10;
+			m_player.Ranking -= 10;
 
 		}
 		else if (score > 0)
 		{
 			s_Score.SetText("D" + " (" + score.ToString() + ")");
-			m_player.Ranking += -25;
+			m_player.Ranking += 25;
 
 		}
 		else
 		{
 			s_Score.SetText("F"+ " (" + score.ToString() + ")");
-			m_player.Ranking += -100;
+			m_player.Ranking += 100;
 		}
 		//s_Score.text += " (" + score.ToString() + ")";
 		s_Trend.text = m_currentTrend.Name.ToString();

@@ -5406,7 +5406,7 @@ MonoBehaviour:
   name: Angelic Legs
   m_sprite: {fileID: 21300000, guid: 1e4a027db26db3442b2e46d8eee177e8, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!1 &202204569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12431,7 +12431,7 @@ MonoBehaviour:
   name: Angelic Misc
   m_sprite: {fileID: 21300000, guid: f8cb24e3b4714b744abf1dd5899e9d2a, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!1 &384103173
 GameObject:
   m_ObjectHideFlags: 0
@@ -27084,7 +27084,7 @@ MonoBehaviour:
   name: Angelic Top
   m_sprite: {fileID: 21300000, guid: 2b76d1752f122f84ca71d222919f77dd, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!1 &748914583
 GameObject:
   m_ObjectHideFlags: 0
@@ -36191,7 +36191,7 @@ MonoBehaviour:
   name: Angelic feet
   m_sprite: {fileID: 21300000, guid: 969c9dac94d7831409a770560a5542cd, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!1 &1035831180
 GameObject:
   m_ObjectHideFlags: 0
@@ -41111,7 +41111,7 @@ MonoBehaviour:
   name: Angelic Bob
   m_sprite: {fileID: 21300000, guid: f7879439eb69a944f888741d59241c02, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!114 &1198516725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47773,7 +47773,7 @@ MonoBehaviour:
   name: Angelic Face
   m_sprite: {fileID: 21300000, guid: b4ae4de92a8dfc74bbb7e4b04cc6bee1, type: 3}
   m_additionalSprite: {fileID: 0}
-  m_obtained: 1
+  m_obtained: 0
 --- !u!1 &1418428392
 GameObject:
   m_ObjectHideFlags: 0
