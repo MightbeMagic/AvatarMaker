@@ -93,74 +93,21 @@ public class INV_Clothing : MonoBehaviour
 
 	public void SetCurrentPart()
 	{
-
-		switch (m_type)
+		Player player = Player.m_instance;
+		INV_Clothing current = player.m_equipped.ContainsKey(m_type) ? player.m_equipped[m_type] : null;
+		if (current != this)
 		{
-			case ePartType.HAIR:
-				if (Player.m_instance.m_hairEquipted == null || Player.m_instance.m_hairEquipted != this)
-				{
-					Player.m_instance.m_hairEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_hairEquipted = null;
-				}
-				break;
-			case ePartType.FACE:
-				if (Player.m_instance.m_faceEquipted == null || Player.m_instance.m_faceEquipted != this)
-				{
-					Player.m_instance.m_faceEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_faceEquipted = null;
-				}
-				break;
-			case ePartType.TOPS:
-				if (Player.m_instance.m_topsEquipted == null || Player.m_instance.m_topsEquipted != this)
-				{
-					Player.m_instance.m_topsEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_topsEquipted = null;
-				}
-				break;
-			case ePartType.LEGS:
-				if (Player.m_instance.m_legsEquipted == null || Player.m_instance.m_legsEquipted != this)
-				{
-					Player.m_instance.m_legsEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_legsEquipted = null;
-				}
-				break;
-			case ePartType.FEET:
-				if (Player.m_instance.m_feetEquipted == null || Player.m_instance.m_feetEquipted != this)
-				{
-					Player.m_instance.m_feetEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_feetEquipted = null;
-				}
-				break;
-			case ePartType.MISC:
-				if (Player.m_instance.m_miscEquipted == null || Player.m_instance.m_miscEquipted != this)
-				{
-					Player.m_instance.m_miscEquipted = this;
-				}
-				else
-				{
-					Player.m_instance.m_miscEquipted = null;
-				}
-				break;
+			if (!player.m_equipped.ContainsKey(m_type))
+				player.m_equipped.Add(m_type, null);
+			player.m_equipped[m_type] = this;
+		}
+		else
+		{
+			player.m_equipped[m_type] = null;
 		}
 
-
-		Player.m_instance.m_wardrobe.UpdateItems();
-		Player.m_instance.UpdateAttributes();
+		player.m_wardrobe.UpdateItems();
+		player.UpdateAttributes();
 	}
 
 }
